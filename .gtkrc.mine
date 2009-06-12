@@ -1,0 +1,7 @@
+style "user-font"
+{
+font_name = "Liberation 9"
+}
+widget_class "*" style "user-font"
+gtk-font-name = "Liberation 9"
+gtk-icon-theme-name = "Crashbit"
