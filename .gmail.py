@@ -1,0 +1,4 @@
+# GMAIL Checker
+
+user
+pass
