@@ -12,13 +12,13 @@ URxvt*scrollBar_right:   true
 URxvt*loginShell:   true
 URxvt*tintColor: #ffffff
 URxvt*shading: 30
-URxvt*termName:     rxvt-unicode
+!URxvt*termName:     rxvt-unicode
 URxvt*inheritPixmap:   true
 URxvt*cutchars:     "()*,<>[]{}|'
 URxvt*secondaryScroll:   true
 urxvt*perl-lib:     /usr/lib/urxvt/perl/
 urxvt*perl-ext-common:   default,matcher
-!URxvt*urlLauncher:   /usr/bin/firefox
+URxvt*urlLauncher:   /usr/bin/uzbl-core
 URxvt*matcher.button:   1
 URxvt*matcher.pattern.1: \\bwww\\.[\\w-]+\\.[\\w./?&@#-]*[\\w/-]
 URxvt*visualBell:   true
@@ -51,33 +51,7 @@ URxvt*foreground: #dcdccc
 !*color7:           #EDEDED
 !*color15:          #EDEDED
 !
-! [Gigamos]
-!
-! Black
-!*color0: #1e1e1e
-!*color8: #555753
-! Red
-!*color1: #CC0000
-!*color9: #EF2929
-! Green
-!*color2: #4E9A06
-!*color10: #8AE234
-! Yellow
-!*color3: #C4A000
-!*color11: #FCE94F
-! Blue
-!*color4: #3465A4
-!*color12: #729FCF
-! Purple
-!*color5: #75507B
-!*color13: #AD7FA8
-! Cyan
-!*color6: rgb:06/98/9A
-!*color14: #34E2E2
-! White
-!*color7: #9f9f9f
-!*color15: #e0e0e0
- 
+
 ! [Zenburn]
 !
 ! black + red
@@ -104,7 +78,35 @@ URxvt*foreground: #dcdccc
 ! bright-cyan + bright-white
 *color14: #93e0e3
 *color15: #ffffff
- 
+
+! [Tango]
+!
+! Black
+!*color0:        #000000
+!*color8:        #555753
+! Red
+!*color1:        #ff6565
+!*color9:        #ff8d8d
+! Green
+!*color2:        #93d44f
+!*color10:       #c8e7a8
+! Yellow
+!*color3:        #eab93d
+!*color11:       #ffc123
+! Blue
+!*color4:        #204a87
+!*color12:       #3465a4
+! Mangenta
+!*color5:        #ce5c00
+!*color13:       #f57900
+! Cyan
+!*color6:        #89b6e2
+!*color14:       #46a4ff
+! White
+!*color7:        #cccccc
+!*color15:       #ffffff
+
+
 !-------------------------------------------------------------------------------
 !
 !

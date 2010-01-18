@@ -15,8 +15,9 @@ alias mv='mv -v'
 alias rm='rm -v'
 alias ll='ls -lh'
 alias ls='ls --color=auto'
+alias df='df -h'
 alias grep='grep --color=auto'
-alias pacup='sudo yaourt -Syu'
+alias pacup='yaourt -Syu'
 alias pacs="pacsearch"
 alias startx="startx -- -dpi 100"
 alias mv2queue="mv ~/downloads/*.nzb ~/archbox/queue"
@@ -64,7 +65,7 @@ stockdata=`echo ${STOCKINFO[@]}`
     fi
 }
 
-#Translate a Word  - USAGE: translate house spanish  # See dictionary.com for available languages (there are many).
+# Translate a Word  - USAGE: translate house spanish  # See dictionary.com for available languages (there are many).
 translate ()
 {
 TRANSLATED=`lynx -dump "http://dictionary.reference.com/browse/${1}" | grep -i -m 1 -w "${2}:" | sed 's/^[ \t]*//;s/[ \t]*$//'`
@@ -97,14 +98,6 @@ pacsearch () {
        -e 's#extra/.*#\\033[0;32m&\\033[0;37m#g' \
        -e 's#community/.*#\\033[1;35m&\\033[0;37m#g' \
        -e 's#^.*/.* [0-9].*#\\033[0;36m&\\033[0;37m#g' )"
-}
-
-# Fah Stat Monitor
-fahstat() {
-	echo
-	echo `date`
-	echo
-	cat /opt/fah-smp/unitinfo.txt  
 }
 
 # Extract
