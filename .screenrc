@@ -19,6 +19,7 @@ defutf8 on
 altscreen on
 
 term screen-256color
+terminfo rxvt-unicode 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
 
 hardstatus off
 #hardstatus alwayslastline
@@ -27,11 +28,8 @@ hardstatus off
 #hardstatus string   '%{wk} %?%-Lw%?%{y}%n*%f %t%?(%u)%?%{= kw}%?%+Lw%?%?%= %{g}@%{G}%H %{b}%c%{W}'
 caption always "%{= kb}[ %{kG}$USER%{kW}@%{kG}%H %{b}][ %=%{w}%?%-Lw%?%{b}(%{W}%n*%f %t%?(%u)%?%{b})%{w}%?%+Lw%?%= %{b}][%{kB} %d.%m.%Y %{kW}%0c %{kb}]"
 
-
-screen -t hellanzb       hellanzb.py
-screen -t mc             mc /srv/hellanzb/usenet
-screen -t syslog         sudo tail -f /var/log/messages.log
-screen -t stats          htop
+# screens
+screen -t syslog       1       sudo tail -f /var/log/everything.log
 
 bindkey "^[Od" prev  # change window with ctrl-left
 bindkey "^[Oc" next  # change window with ctrl-right
